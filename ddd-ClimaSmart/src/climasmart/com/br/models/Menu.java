@@ -38,19 +38,15 @@ public class Menu {
                     if (eventoEscolhido.equalsIgnoreCase("Furacão")) {
                         Furacao furacao = new Furacao();
                         furacao.explicacao();
-                        furacao.descreverEvento();
                     } else if (eventoEscolhido.equalsIgnoreCase("Seca")) {
                         Seca seca = new Seca();
                         seca.explicacao();
-                        seca.descreverEvento();
                     } else if (eventoEscolhido.equalsIgnoreCase("Enchente")) {
                         Enchente enchente = new Enchente();
                         enchente.explicacao();
-                        enchente.descreverEvento();
                     } else if (eventoEscolhido.equalsIgnoreCase("Incêndio")) {
                         Incendio incendio = new Incendio();
                         incendio.explicacao();
-                        incendio.descreverEvento();
                     } else {
                         System.out.println("Evento não reconhecido.");
                     }

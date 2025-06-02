@@ -1,6 +1,7 @@
 package climasmart.com.br.models;
 
 import climasmart.com.br.enums.NivelRisco;
+import climasmart.com.br.enums.StatusAlerta;
 
 import java.util.Scanner;
 
@@ -10,7 +11,9 @@ public abstract class EventoClima {
     //Atributos
     public String nome;
 
+
     protected NivelRisco nivelRisco;
+
 
     public String getNome() {return nome;}
     public void setNome(String nome) {this.nome = nome;}
@@ -21,39 +24,25 @@ public abstract class EventoClima {
 
 //define que toda subclasse deve ter esse método, é abstrato pois não se pode descrever "realmente" um evento
 
-
-
-    public String explicacao(){
-        return "Esse é um evento climático.";
+    //método com sobreescrita
+    public String explicacao() {
+        return "Agora você irá ter acesso sobre o que são os eventos climáticos extremos, como surgem, quais os principais fatores que contribuem para seu aumento nos últimos anos e quais são suas características mais marcantes.";
     }
-
-    public void evento(Furacao furacao){
-        if (getNome().equalsIgnoreCase("Furacão")) {
-            furacao.descreverEvento();
-        }
-    }
-    public void evento(Seca seca){
-        if (getNome().equalsIgnoreCase("Seca")) {
-            seca.descreverEvento();
-        }
-    }
-    public void evento(Enchente enchente){
-        if (getNome().equalsIgnoreCase("Enchente")) {
-            enchente.descreverEvento();
-        }
-    }
-    public void evento(Incendio incendio){
-        if (getNome().equalsIgnoreCase("Incêndio")) {
-            incendio.descreverEvento();
-        }
-    }
-
-
-
-
-
-
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

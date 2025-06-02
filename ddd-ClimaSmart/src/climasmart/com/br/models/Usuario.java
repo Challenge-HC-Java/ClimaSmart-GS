@@ -3,6 +3,8 @@ package climasmart.com.br.models;
 import java.util.Scanner;
 
 public class Usuario {
+
+    //Faz o cadastro dos dados do usuário
     private String nomeCompleto;
     private String contato;
     private Localizacao localizacao;
@@ -25,7 +27,7 @@ public class Usuario {
         setNomeCompleto(nomeCompleto);
         System.out.println("Digite seu contato: ");
         contato = leitor.nextLine();
-        System.out.println("\nAgora informe sua localização!(Ex: estou em casa, no trabalho...");
+        System.out.println("\nAgora informe sua localização!");
         leitor.nextLine();
         localizacao = new Localizacao();
         localizacao.receberDados(leitor);

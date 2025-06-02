@@ -1,16 +1,34 @@
 package climasmart.com.br.models;
 
+import climasmart.com.br.enums.NivelRisco;
+
 public class Furacao extends EventoClima{
+
+    //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
     @Override
     public String explicacao() {
-
-        System.out.println("mncdsmcv");
-        return "";
+        return "Furacão: Sistema de tempestades de grande escala, formado sobre oceanos quentes. "
+                + "Possui ventos superiores a 250 km/h, ondas gigantes e alto poder destrutivo. "
+                + "Sua intensidade cresce com o aquecimento dos oceanos."
+                +"Sinais de que você está em uma região com risco de furação ou ciclone tropical:"
+                +"Alertas meteorológicos indicando formação de ciclones.\n" +
+                "\n" +
+                "Céu carregado, ventos muito fortes e ondas altas no litoral.\n" +
+                "\n" +
+                "Queda brusca da pressão atmosférica e sensação de abafamento.\n" +
+                "\n" +
+                "Sons fortes de ventania e objetos sendo arrastados."
+                +"Como reagir: "
+                +"Siga imediatamente os alertas das autoridades e evacue, se for orientado.\n" +
+                "\n" +
+                "Se não houver tempo para evacuar, procure um cômodo interno, sem janelas, preferencialmente no andar mais baixo da casa.\n" +
+                "\n" +
+                "Estoque alimentos não perecíveis, água potável, lanternas, rádio e medicamentos.\n" +
+                "\n" +
+                "Desligue gás, água e energia elétrica antes de se abrigar.\n" +
+                "\n" +
+                "Após a passagem do furacão, só saia do abrigo quando as autoridades confirmarem que é seguro.";
+    }
     }
 
-    public void descreverEvento(){
-        System.out.println("Esse evento é uma ,.....");
 
-    }
-
-}
