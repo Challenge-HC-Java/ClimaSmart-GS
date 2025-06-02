@@ -1,8 +1,6 @@
 package climasmart.com.br.tests;
 
-import climasmart.com.br.models.Localizacao;
-import climasmart.com.br.models.Menu;
-import climasmart.com.br.models.Usuario;
+import climasmart.com.br.models.*;
 
 import java.util.Scanner;
 
@@ -12,10 +10,13 @@ public class Main {
         //Instâncias
         Menu menu = new Menu();
         Usuario usuario = new Usuario();
-
+        EventoClima furacao = new Furacao();//criando um obj da superclasse
+        EventoClima seca = new Seca();
+        EventoClima enchente = new Enchente();
+        EventoClima incendio = new Incendio();
 
         //Chamando métodos
-        menu.exibirMenu(usuario,leitor);
+        menu.exibirMenu(usuario,enchente, leitor);
 
     }
 
