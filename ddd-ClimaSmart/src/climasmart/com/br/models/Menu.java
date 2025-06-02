@@ -17,6 +17,9 @@ public class Menu {
         System.out.println("\n==============================");
         usuario.receberDados(leitor);
         usuario.exibirDados();
+        Localizacao localizacao = new Localizacao();
+        usuario.setLocalizacao(localizacao);
+        Radar radar = new Radar();
 
         String decisao = " ";
         while (true) {
@@ -50,14 +53,41 @@ public class Menu {
                     } else {
                         System.out.println("Evento não reconhecido.");
                     }
-
                     System.out.println("Ótimo " + ", vamos te explicar sobre " + eventoEscolhido + "!");
                     break;
 
-
                 case "2":
+                    System.out.println("Digite qual evento extremo você deseja saber como reagir (Furacão, Seca, Enchente, Incêndio): ");
+                    String eventoReagir = leitor.nextLine();
+                    switch(eventoReagir.toLowerCase()) {
+                        case "furacão":
+                        case "furacao":  // para aceitar sem acento
+                            Furacao furacao = new Furacao();
+                            System.out.println(eventoClima.reagir(furacao));
+                            break;
+                        case "seca":
+                            Seca seca = new Seca();
+                            System.out.println(eventoClima.reagir(seca));
+                            break;
+                        case "enchente":
+                            Enchente enchente = new Enchente();
+                            System.out.println(eventoClima.reagir(enchente));
+                            break;
+                        case "incêndio":
+                        case "incendio":  // para aceitar sem acento
+                            Incendio incendio = new Incendio();
+                            System.out.println(eventoClima.reagir(incendio));
+                            break;
+                        default:
+                            System.out.println("Evento não reconhecido para reação.");
+                            break;
+                    }
+                    break;
+
 
                 case "3":
+                    localizacao.eventosRegioes();
+                    radar.alertas(localizacao);
 
                 case "4":
 

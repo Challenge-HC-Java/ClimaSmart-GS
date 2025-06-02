@@ -46,37 +46,68 @@ public class Localizacao {
     public String exibirLocal() {
         return cidade + ", " + estado + " - " + pais;
     }
-
-    public String eventosRegioes(Usuario usuario, EventoClima eventoClima, Radar radar, Scanner leitor){
+    public String eventosRegioes(){
         while (true){
-            regiao = leitor.nextLine();
-            switch (regiao){
-                case "Nordeste":
-                    System.out.println();
-                    return "";
-                case "Sul":
-                    System.out.println();
-                    return "";
-                case "Centro-Oeste":
-                    System.out.println();
-                    return "";
-                case "Sudeste":
-                    System.out.println();
-                    return "";
-                case "Norte":
-                    System.out.println();
-                    return "";
+            estado = estado.trim().toUpperCase();
+            switch (estado){
+                // Região Norte
+                case "AC":
+                case "AP":
+                case "AM":
+                case "PA":
+                case "RO":
+                case "RR":
+                case "TO":
+                    System.out.println(" Eventos mais característicos:\n" +
+                            "Enchentes (cheias dos rios) e queimadas.");
+                    break;
+                // Região Sul
+                case "PR":
+                case "RS":
+                case "SC":
+                    System.out.println(" Eventos mais característicos:\n" +
+                            "Enchentes, deslizamentos, temporais, ciclones extratropicais e granizo.");
+                    break;
+                // Região Centro-Oeste
+                case "DF":
+                case "GO":
+                case "MT":
+                case "MS":
+                    System.out.println(" Eventos mais característicos:\n" +
+                            "Queimadas, incêndios florestais e estiagem.");
+                    break;
+                // Região Sudeste
+                case "ES":
+                case "MG":
+                case "RJ":
+                case "SP":
+                    System.out.println("Eventos mais característicos:\n" +
+                            "Enchentes, deslizamentos, tempestades severas e ondas de calor.");
+                    break;
+                // Região Nordeste
+                case "AL":
+                case "BA":
+                case "CE":
+                case "MA":
+                case "PB":
+                case "PE":
+                case "PI":
+                case "RN":
+                case "SE":
+                    System.out.println("Evento mais característico:\n" +
+                            "Secas prolongadas e ondas de calor.");
+                    break;
                 default:
                     System.out.println();
             }
 
         }
 
+
+
     }
 
-
-
-    public String eventosGlobais(){}
+    //public String eventosGlobais(){}
 
 
 

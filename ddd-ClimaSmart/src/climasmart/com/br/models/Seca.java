@@ -6,8 +6,6 @@ public class Seca extends EventoClima{
 
     //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
 
-
-
     @Override
     public String explicacao() {
         return "Seca: Período prolongado de ausência de chuvas, causado por bloqueios atmosféricos e agravado pelo aquecimento global. "
@@ -17,17 +15,9 @@ public class Seca extends EventoClima{
                 "\n" +
                 "Vegetação ressecada, rachaduras no solo e diminuição visível do nível de rios, lagos e represas.\n" +
                 "\n" +
-                "Maior quantidade de poeira no ar."
-                + "Como reagir : "
-                + "Economize água em todas as atividades: banho, limpeza, irrigação e uso doméstico.\n" +
-                "\n" +
-                "Armazene água de forma segura, evitando contaminações.\n" +
-                "\n" +
-                "Evite queimadas e descarte de lixo que possam gerar fogo.\n" +
-                "\n" +
-                "Proteja-se do calor, utilizando roupas leves e mantendo-se hidratado.\n" +
-                "\n" +
-                "Atenção especial a idosos, crianças e animais, que são mais sensíveis aos efeitos da seca.";
+                "Maior quantidade de poeira no ar.";
     }
+
+
 
 }

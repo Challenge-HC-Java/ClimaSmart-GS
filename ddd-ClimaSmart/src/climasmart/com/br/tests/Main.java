@@ -11,14 +11,22 @@ public class Main {
         //Instâncias
         Menu menu = new Menu();
         Usuario usuario = new Usuario();
+        Radar radar = new Radar();
+        Localizacao local = usuario.getLocalizacao();
+
+        // Eventos climáticos disponíveis
         EventoClima seca = new Seca();
         EventoClima enchente = new Enchente();
         EventoClima furacao = new Furacao();
         EventoClima incendio = new Incendio();
 
-        //Chamando métodos
-
+        // Coleta dados via menu
         menu.exibirMenu(usuario,enchente, leitor);
+
+
+
+
+
 
 
 

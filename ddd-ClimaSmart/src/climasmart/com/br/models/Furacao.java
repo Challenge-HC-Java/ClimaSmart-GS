@@ -17,18 +17,12 @@ public class Furacao extends EventoClima{
                 "\n" +
                 "Queda brusca da pressão atmosférica e sensação de abafamento.\n" +
                 "\n" +
-                "Sons fortes de ventania e objetos sendo arrastados."
-                +"Como reagir: "
-                +"Siga imediatamente os alertas das autoridades e evacue, se for orientado.\n" +
-                "\n" +
-                "Se não houver tempo para evacuar, procure um cômodo interno, sem janelas, preferencialmente no andar mais baixo da casa.\n" +
-                "\n" +
-                "Estoque alimentos não perecíveis, água potável, lanternas, rádio e medicamentos.\n" +
-                "\n" +
-                "Desligue gás, água e energia elétrica antes de se abrigar.\n" +
-                "\n" +
-                "Após a passagem do furacão, só saia do abrigo quando as autoridades confirmarem que é seguro.";
+                "Sons fortes de ventania e objetos sendo arrastados.";
     }
+
+
+
     }
+
 
 
