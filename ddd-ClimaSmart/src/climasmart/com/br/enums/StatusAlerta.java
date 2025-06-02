@@ -1,4 +1,4 @@
 package climasmart.com.br.enums;
 
-public class Dados {
+public enum StatusAlerta {
 }
