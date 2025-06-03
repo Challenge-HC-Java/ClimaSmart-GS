@@ -12,33 +12,18 @@ public abstract class EventoClima {
     public String nome;
     protected StatusAlerta status;
     protected NivelRisco nivelRisco;
-
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public NivelRisco getNivelRisco() {
-        return nivelRisco;
-    }
-
-    public void setNivelRisco(NivelRisco nivelRisco) {
-        this.nivelRisco = nivelRisco;
-    }
-
+    //Getters and Setters
+    public String getNome() {return nome;}
+    public void setNome(String nome) {this.nome = nome;}
+    public NivelRisco getNivelRisco() {return nivelRisco;}
+    public void setNivelRisco(NivelRisco nivelRisco) {this.nivelRisco = nivelRisco;}
     //Construtor permite criar o objeto direto, já com todos os dados preenchidos.
-
 //define que toda subclasse deve ter esse método, é abstrato pois não se pode descrever "realmente" um evento
-
-    //método com sobreescrita
+    //Método com sobreescrita
     public String explicacao() {
         return "Agora você irá ter acesso sobre o que são os eventos climáticos extremos, como surgem, quais os principais fatores que contribuem para seu aumento nos últimos anos e quais são suas características mais marcantes.";
     }
-
+    //Método com sobrecarga
     public String reagir(Enchente enchente) {
         return "Como reagir: "
                 + "Saia imediatamente de áreas de risco, como encostas, beiras de rios, vales e baixadas.\n" +
@@ -50,7 +35,6 @@ public abstract class EventoClima {
                 "Prepare uma mochila de emergência com documentos, água, alimentos e itens essenciais.\n" +
                 "\n" +
                 "Após a enchente, evite contato com a água contaminada e tenha cuidado com estruturas que possam ter sido comprometidas.";
-
     }
     public String reagir(Seca seca){
         return "Como reagir : "

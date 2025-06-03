@@ -9,7 +9,7 @@ public class Localizacao {
     private String estado;
     private String cidade;
     private String regiao;
-
+    //Getters and Setters
     public String getPais() {return pais;}
     public void setPais(String pais) {this.pais = pais;}
     public String getEstado() {return estado;}
@@ -18,15 +18,13 @@ public class Localizacao {
     public void setCidade(String cidade) {this.cidade = cidade;}
     public String getRegiao() {return regiao;}
     public void setRegiao(String regiao) {this.regiao = regiao;}
-
-    //Construtores
+    //Construtor
     public Localizacao() {}
     public Localizacao(String cidade, String estado, String pais) {
         this.cidade = cidade;
         this.estado = estado;
         this.pais = pais;
     }
-
     //Métodos
     public void receberDados(Scanner leitor) {
         System.out.println("Digite seu país: ");
@@ -47,9 +45,9 @@ public class Localizacao {
         return cidade + ", " + estado + " - " + pais;
     }
     public String eventosRegioes(){
-        while (true){
+        while (true) {
             estado = estado.trim().toUpperCase();
-            switch (estado){
+            switch (estado) {
                 // Região Norte
                 case "AC":
                 case "AP":
@@ -100,15 +98,7 @@ public class Localizacao {
                 default:
                     System.out.println();
             }
-
         }
-
-
-
     }
-
     //public String eventosGlobais(){}
-
-
-
 }

@@ -7,8 +7,7 @@ import java.util.List;
 
 public class Radar {
     //aqui eu faço as previsões e depois exibo na classe    Localização
-
-
+    //Métodos
     public String alertas(Localizacao localizacao) {
         String mensagem = "Alertas!!\n";
         mensagem += "Você está na região " + localizacao.getRegiao() + " no estado " + localizacao.getEstado() + ".\n";
@@ -45,5 +44,4 @@ public class Radar {
         System.out.println(mensagem);
         return mensagem;
     }
-
 }

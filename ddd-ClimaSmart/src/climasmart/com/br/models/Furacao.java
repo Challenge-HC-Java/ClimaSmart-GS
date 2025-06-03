@@ -3,8 +3,8 @@ package climasmart.com.br.models;
 import climasmart.com.br.enums.NivelRisco;
 
 public class Furacao extends EventoClima{
-
     //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
+    //Método com sobrescrita
     @Override
     public String explicacao() {
         return "Furacão: Sistema de tempestades de grande escala, formado sobre oceanos quentes. "

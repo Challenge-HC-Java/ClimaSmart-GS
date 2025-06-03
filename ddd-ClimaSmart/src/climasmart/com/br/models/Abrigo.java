@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Abrigo {
     //Atributos
-
     //Métodos
-
     public String listarAbrigos(Localizacao localizacao) {
         String estado = localizacao.getEstado().toUpperCase();
         String abrigos = obterAbrigosPorEstado(estado);
@@ -36,5 +34,4 @@ public class Abrigo {
                 return "Não há registros de abrigos para essa localidade ou estado não identificado.";
         }
     }
-
 }

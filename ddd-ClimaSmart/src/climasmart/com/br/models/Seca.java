@@ -3,9 +3,8 @@ package climasmart.com.br.models;
 import climasmart.com.br.enums.NivelRisco;
 
 public class Seca extends EventoClima{
-
     //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
-
+    //Método com sobrescrita
     @Override
     public String explicacao() {
         return "Seca: Período prolongado de ausência de chuvas, causado por bloqueios atmosféricos e agravado pelo aquecimento global. "

@@ -22,6 +22,7 @@ public class Main {
 
         // Coleta dados via menu
         menu.exibirMenu(usuario,leitor);
+        //O menu está em loop INFINITO MDS
 
 
 
