@@ -1,24 +1,14 @@
 package climasmart.com.br.models;
-
 import climasmart.com.br.enums.NivelRisco;
-import climasmart.com.br.enums.StatusAlerta;
-
-import java.util.Scanner;
-
 public abstract class EventoClima {
-    //classe abstrata que não pode ser instanciada, aqui eu vou chamar as descrições, por exemplo
-    //Seca ....
     //Atributos
     public String nome;
-    protected StatusAlerta status;
     protected NivelRisco nivelRisco;
     //Getters and Setters
     public String getNome() {return nome;}
     public void setNome(String nome) {this.nome = nome;}
     public NivelRisco getNivelRisco() {return nivelRisco;}
     public void setNivelRisco(NivelRisco nivelRisco) {this.nivelRisco = nivelRisco;}
-    //Construtor permite criar o objeto direto, já com todos os dados preenchidos.
-//define que toda subclasse deve ter esse método, é abstrato pois não se pode descrever "realmente" um evento
     //Método com sobreescrita
     public abstract String explicacao();
     //Método com sobrecarga
@@ -72,21 +62,4 @@ public abstract class EventoClima {
                 "\n" +
                 "Após a passagem do furacão, só saia do abrigo quando as autoridades confirmarem que é seguro.";
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

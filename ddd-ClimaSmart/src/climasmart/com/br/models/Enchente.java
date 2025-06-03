@@ -1,9 +1,6 @@
 package climasmart.com.br.models;
-
 import climasmart.com.br.enums.NivelRisco;
-
 public class Enchente extends EventoClima{
-    //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
     //Método com sobrescrita
     @Override
     public String explicacao() {
@@ -17,7 +14,7 @@ public class Enchente extends EventoClima{
                 "Água saindo dos bueiros, ruas alagando rapidamente.\n" +
                 "Sons de água corrente muito forte e presença de lama.";
     }
-    }
+}
 
 
 

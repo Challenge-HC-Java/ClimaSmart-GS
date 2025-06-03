@@ -1,9 +1,6 @@
 package climasmart.com.br.models;
-
 import climasmart.com.br.enums.NivelRisco;
-
 public class Seca extends EventoClima{
-    //Subclasse de EventoClima, aqui tenho que descrever todas as caracterísitcas desse evento.
     //Método com sobrescrita
     @Override
     public String explicacao() {

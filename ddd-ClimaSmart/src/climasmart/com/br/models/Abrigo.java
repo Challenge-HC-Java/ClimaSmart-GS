@@ -1,8 +1,5 @@
 package climasmart.com.br.models;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.util.Scanner;
-
 public class Abrigo {
     //Atributos
     //Métodos

@@ -1,9 +1,6 @@
 package climasmart.com.br.models;
 
-import climasmart.com.br.enums.StatusAlerta;
-
 import java.util.Scanner;
-
 public class Usuario {
     //Atributos
     private String nomeCompleto;
@@ -33,9 +30,4 @@ public class Usuario {
         System.out.println("Contato: " + contato);
         System.out.println("Localização: " + localizacao.exibirLocal());
     }
-
-    //public void statusAlerta(){
-     //   System.out.println("Alerta!" + StatusAlerta.ATIVO);
-
-   // }
 }

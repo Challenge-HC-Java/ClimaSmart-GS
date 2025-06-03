@@ -28,8 +28,8 @@ public class Menu {
                     "\n1-O que são eventos climáticos e seus tipos" +
                     "\n2-Como reagir diante de eventos extremos " +
                     "\n3-Riscos da minha região" +
-                    "\n4-Apoio psicológico"+
-                    "\n5-Impactos climáticos no mundo"+
+                    "\n4-Apoio psicológico" +
+                    "\n5-Impactos climáticos no mundo" +
                     "\n0 - Sair");
             decisao = leitor.nextLine();
             if (decisao.equals("0")) {
@@ -92,12 +92,35 @@ public class Menu {
                     System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
                     break;
                 case "3":
-                    localizacao.descricao();
-                    System.out.println(localizacao.eventosRegioes(localizacao));
-                    System.out.println(radar.alertas(localizacao));
-                    System.out.println("\n==============================");
-                    System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
-                    break;
+                    String pais = localizacao.getPais();
+                    String estadoOuLocal = localizacao.getEstado();
+                    String[] estadosBR = {
+                            "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS",
+                            "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
+                            "SP", "SE", "TO"
+                    };
+                    boolean ehBrasil = pais != null && pais.equalsIgnoreCase("Brasil");
+                    boolean ehEstadoBR = false;
+                    if (ehBrasil && estadoOuLocal != null) {
+                        for (String estadoBR : estadosBR) {
+                            if (estadoBR.equalsIgnoreCase(estadoOuLocal.trim())) {
+                                ehEstadoBR = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (ehBrasil && ehEstadoBR) {
+                        localizacao.descricao();
+                        System.out.println(localizacao.eventosRegioes(localizacao));
+                        System.out.println(radar.alertas(localizacao));
+                    } else {
+                        System.out.println("\nDetectamos que você não está em uma localidade brasileira.");
+                        String eventos = localizacao.eventosGlobaisPorLocal(localizacao);
+                        System.out.println(eventos);
+                        System.out.println("\n==============================");
+                        System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
+                        break;
+                    }
                 case "4":
                     System.out.println("\n--- Abrigos Disponíveis ---");
                     System.out.println(abrigo.listarAbrigos(usuario.getLocalizacao()));
@@ -106,17 +129,16 @@ public class Menu {
                     System.out.println("\n==============================");
                     System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
                     break;
-                case "5":
-                    System.out.println("\n==============================");
-                    localizacao.eventosGlobais();
-                    System.out.println("\n==============================");
-                    System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
-                    break;
-                default:
-                    System.out.println("\nOpção inválida. Tente novamente.");
-                    break;
+                        case "5":
+                            System.out.println("\n==============================");
+                            System.out.println(localizacao.eventosGlobais());
+                            System.out.println("Escolha outra função do nosso site ou digite 0 para sair.");
+                            break;
+                        default:
+                            System.out.println("\nOpção inválida. Tente novamente.");
+                            break;
+                    }
             }
-        }
         return decisao;
     }
 }
