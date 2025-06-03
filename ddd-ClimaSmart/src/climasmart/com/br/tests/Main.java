@@ -21,7 +21,8 @@ public class Main {
         EventoClima incendio = new Incendio();
 
         // Coleta dados via menu
-        menu.exibirMenu(usuario,enchente, leitor);
+        menu.exibirMenu(usuario,leitor);
+
 
 
 
