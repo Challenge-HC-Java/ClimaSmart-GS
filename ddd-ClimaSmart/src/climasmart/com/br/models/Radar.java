@@ -41,7 +41,6 @@ public class Radar {
             System.out.println(estado + " não está entre os estados mais afetados.");
             System.out.println("O nível de risco desse estado é " + NivelRisco.MODERADO);
         }
-        System.out.println(mensagem);
         return mensagem;
     }
 }

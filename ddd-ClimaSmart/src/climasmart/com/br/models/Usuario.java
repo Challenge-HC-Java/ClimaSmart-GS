@@ -24,7 +24,6 @@ public class Usuario {
         System.out.println("Digite seu contato: ");
         contato = leitor.nextLine();
         System.out.println("\nAgora informe sua localização!");
-        leitor.nextLine();
         localizacao = new Localizacao();
         localizacao.receberDados(leitor);
     }

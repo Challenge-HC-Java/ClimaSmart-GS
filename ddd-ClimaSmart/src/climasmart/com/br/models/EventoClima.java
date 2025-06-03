@@ -20,9 +20,7 @@ public abstract class EventoClima {
     //Construtor permite criar o objeto direto, já com todos os dados preenchidos.
 //define que toda subclasse deve ter esse método, é abstrato pois não se pode descrever "realmente" um evento
     //Método com sobreescrita
-    public String explicacao() {
-        return "Agora você irá ter acesso sobre o que são os eventos climáticos extremos, como surgem, quais os principais fatores que contribuem para seu aumento nos últimos anos e quais são suas características mais marcantes.";
-    }
+    public abstract String explicacao();
     //Método com sobrecarga
     public String reagir(Enchente enchente) {
         return "Como reagir: "
@@ -74,7 +72,10 @@ public abstract class EventoClima {
                 "\n" +
                 "Após a passagem do furacão, só saia do abrigo quando as autoridades confirmarem que é seguro.";
     }
+
 }
+
+
 
 
 

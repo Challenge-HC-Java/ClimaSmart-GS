@@ -1,22 +1,19 @@
 package climasmart.com.br.models;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
 public class Abrigo {
     //Atributos
     //Métodos
     public String listarAbrigos(Localizacao localizacao) {
+        System.out.println("No ClimaSmart, identificamos o seu e exibimos os abrigos mais conhecidos e frequentemente utilizados na sua região, "+
+                        "ajudando você a saber para onde ir em caso de necessidade.");
+        System.out.println("Abrigos comunitários são locais preparados para oferecer segurança e apoio temporário às pessoas em situações de emergência,"+
+                        "como enchentes, deslizamentos, incêndios ou outros eventos climáticos extremos. Esses espaços são organizados por órgãos públicos ou organizações civis e contam, geralmente, com estrutura básica para alimentação, higiene e repouso. ");
         String estado = localizacao.getEstado().toUpperCase();
         String abrigos = obterAbrigosPorEstado(estado);
         return "Abrigos comunitários na região de " + localizacao + ":\n" + abrigos;
-    }
-    private String extrairEstado(String localizacao) {
-        String[] partes = localizacao.split("-");
-        if (partes.length >= 2) {
-            return partes[1].trim().toUpperCase();
-        } else {
-            return "";
-        }
     }
     private String obterAbrigosPorEstado(String estado) {
         switch (estado) {
