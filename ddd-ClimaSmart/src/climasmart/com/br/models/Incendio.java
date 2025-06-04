@@ -17,6 +17,20 @@ public class Incendio extends EventoClima{
                 "Animais fugindo de áreas de mata, céu acinzentado ou avermelhado.";
 
     }
+    public String reagir() {
+        return "Como reagir:"
+                +"Ao avistar fumaça ou fogo, avise imediatamente as autoridades (Defesa Civil, Bombeiros).\n" +
+                "\n" +
+                "Não tente combater incêndios grandes sozinho.\n" +
+                "\n" +
+                "Deixe o local rapidamente, priorizando sua segurança.\n" +
+                "\n" +
+                "Feche portas, janelas e qualquer entrada de ar, se estiver próximo ao fogo.\n" +
+                "\n" +
+                "Use panos úmidos para proteger nariz e boca contra a fumaça.\n" +
+                "\n" +
+                "Tenha um plano de evacuação para sua casa, propriedade ou comunidade.";
+    }
 
 
 

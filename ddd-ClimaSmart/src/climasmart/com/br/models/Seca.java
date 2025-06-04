@@ -13,4 +13,16 @@ public class Seca extends EventoClima{
                 "Vegetação ressecada, rachaduras no solo e diminuição visível do nível de rios, lagos e represas.\n" +
                 "Maior quantidade de poeira no ar.";
     }
+    public String reagir(){
+        return "Como reagir : "
+                + "Economize água em todas as atividades: banho, limpeza, irrigação e uso doméstico.\n" +
+                "\n" +
+                "Armazene água de forma segura, evitando contaminações.\n" +
+                "\n" +
+                "Evite queimadas e descarte de lixo que possam gerar fogo.\n" +
+                "\n" +
+                "Proteja-se do calor, utilizando roupas leves e mantendo-se hidratado.\n" +
+                "\n" +
+                "Atenção especial a idosos, crianças e animais, que são mais sensíveis aos efeitos da seca.";
+    }
 }
