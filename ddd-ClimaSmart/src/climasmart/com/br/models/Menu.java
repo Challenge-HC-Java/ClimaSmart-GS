@@ -27,7 +27,7 @@ public class Menu {
         System.out.println("\n==============================");
     }
 
-        public String exibirMenu(Usuario usuario, Scanner leitor) {
+    public String exibirMenu(Usuario usuario, Scanner leitor) {
             System.out.println("\n==============================");
             System.out.println("\nEscolha uma opção:");
             System.out.println("1 - O que são eventos climáticos e seus tipos");
@@ -39,16 +39,5 @@ public class Menu {
             System.out.print("Digite sua opção: ");
             return leitor.nextLine();
     }
-    /*
-    System.out.println("Agora escolha dentre as opções abaixo o que você deseja ver no nosso sistema:" +
-            "\n1-O que são eventos climáticos e seus tipos" +
-            "\n2-Como reagir diante de eventos extremos " +
-            "\n3-Riscos da minha região" +
-            "\n4-Apoio psicológico" +
-            "\n5-Impactos climáticos no mundo" +
-            "\n0 - Sair");
-    decisao = leitor.nextLine();
-            if (decisao.equals("0")) {
-        System.out.println("Saindo do sistema. Obrigado por usar o ClimaSmart!");
-        break;*/
-    }
+
+}

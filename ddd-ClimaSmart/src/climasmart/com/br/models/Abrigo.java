@@ -2,6 +2,7 @@ package climasmart.com.br.models;
 public class Abrigo {
     //Atributos
     //Métodos
+    //Método com sobrecarga
     public String listarAbrigos(Localizacao localizacao) {
         System.out.println("No ClimaSmart, identificamos o seu e exibimos os abrigos mais conhecidos e frequentemente utilizados na sua região, "+
                         "ajudando você a saber para onde ir em caso de necessidade.");
