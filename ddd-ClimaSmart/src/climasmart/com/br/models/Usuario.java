@@ -30,4 +30,5 @@ public class Usuario {
         System.out.println("Contato: " + contato);
         System.out.println("Localização: " + localizacao.exibirLocal());
     }
+
 }

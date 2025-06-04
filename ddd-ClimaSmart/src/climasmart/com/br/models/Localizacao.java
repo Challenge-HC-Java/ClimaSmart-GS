@@ -172,33 +172,39 @@ public class Localizacao {
                 case "eua":
                 case "estados unidos":
                 case "califórnia":
-                    return "- Incêndios florestais devastadores causados por secas prolongadas e ventos fortes, como o Camp Fire em 2018.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Incêndios florestais devastadores causados por secas prolongadas e ventos fortes, como o Camp Fire em 2018.\n" +
                             "- Ondas de calor intensas, que afetam cidades como Phoenix e Los Angeles, aumentando riscos à saúde.\n" +
                             "- Furacões poderosos que atingem as regiões sul e leste, como o furacão Katrina (2005), trazendo ventos fortes e inundações.\n";
                 case "índia":
-                    return "- Secas severas, especialmente em regiões áridas como Rajastão, impactando agricultura e recursos hídricos.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Secas severas, especialmente em regiões áridas como Rajastão, impactando agricultura e recursos hídricos.\n" +
                             "- Enchentes durante o período de monções, como as enchentes históricas em Kerala em 2018, causando deslizamentos e deslocamento de pessoas.\n" +
                             "- Ondas de calor intensas que aumentam riscos para populações vulneráveis, especialmente idosos e crianças.\n";
                 case "indonésia":
-                    return "- Queimadas florestais frequentes, principalmente em áreas de florestas tropicais e turfas, contribuindo para a poluição do ar e perda de biodiversidade.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Queimadas florestais frequentes, principalmente em áreas de florestas tropicais e turfas, contribuindo para a poluição do ar e perda de biodiversidade.\n" +
                             "- Enchentes tropicais que afetam grandes áreas urbanas, como Jacarta, causando transtornos e prejuízos econômicos.\n";
                 case "áfrica":
                 case "saara":
                 case "áfrica austral":
-                    return "- Secas prolongadas, especialmente na região do Saara e África Austral, prejudicando a agricultura e o abastecimento de água.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Secas prolongadas, especialmente na região do Saara e África Austral, prejudicando a agricultura e o abastecimento de água.\n" +
                             "- Enchentes repentinas, principalmente na África Ocidental, causando danos significativos.\n" +
                             "- Queimadas em savanas e áreas rurais, afetando ecossistemas locais e comunidades.";
                 case "austrália":
-                    return "- Incêndios florestais intensos, como os \"bushfires\" que devastaram grandes áreas em 2019-2020.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Incêndios florestais intensos, como os \"bushfires\" que devastaram grandes áreas em 2019-2020.\n" +
                             "- Secas severas que afetam o interior do país, comprometendo a produção agrícola.\n" +
                             "- Ciclones tropicais que atingem a costa norte, causando ventos fortes e inundações.\n";
                 case "europa":
-                    return "Eventos mais característicos em " + pais + ":\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
                             "- Ondas de calor (principalmente na Europa Ocidental e do Sul).\n" +
                             "- Enchentes causadas por chuvas intensas.";
                 case "china":
                 case "sudeste asiático":
-                    return "- Tufões frequentes que atingem a costa, com ventos fortes e chuvas intensas, como o tufão Haiyan em 2013.\n" +
+                    return "Eventos climáticos do país:"+ localizacao.getPais()+
+                            "- Tufões frequentes que atingem a costa, com ventos fortes e chuvas intensas, como o tufão Haiyan em 2013.\n" +
                             "- Enchentes nas regiões costeiras e interiores, afetando grandes cidades como Guangzhou e Bangkok, causando deslocamento de populações e perdas econômicas.\n";
                 default:
                     return "Localidade global não reconhecida ou ainda sem registros significativos no sistema.";
