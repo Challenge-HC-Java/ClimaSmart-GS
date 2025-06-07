@@ -17,7 +17,6 @@ public class Localizacao {
     public void setRegiao(String regiao) {this.regiao = regiao;}
     //Construtor
     public Localizacao() {
-
     }
     //Métodos
     public void receberDados(Scanner leitor) {

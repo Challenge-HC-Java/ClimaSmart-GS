@@ -2,8 +2,8 @@ package climasmart.com.br.models;
 import climasmart.com.br.enums.NivelRisco;
 public abstract class EventoClima {
     //Atributos
-    public String nome;
-    protected NivelRisco nivelRisco;
+    private String nome;
+    private NivelRisco nivelRisco;
     //Getters and Setters
     public String getNome() {return nome;}
     public void setNome(String nome) {this.nome = nome;}
