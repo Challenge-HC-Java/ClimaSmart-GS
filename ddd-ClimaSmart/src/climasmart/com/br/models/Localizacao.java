@@ -184,7 +184,7 @@ public class Localizacao {
                     return "Eventos climáticos do país:"+ localizacao.getPais()+
                             "- Queimadas florestais frequentes, principalmente em áreas de florestas tropicais e turfas, contribuindo para a poluição do ar e perda de biodiversidade.\n" +
                             "- Enchentes tropicais que afetam grandes áreas urbanas, como Jacarta, causando transtornos e prejuízos econômicos.\n";
-                case "áfrica":
+                case " ":
                 case "saara":
                 case "áfrica austral":
                     return "Eventos climáticos do país:"+ localizacao.getPais()+
